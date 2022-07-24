@@ -1,0 +1,26 @@
+name: RPGExtentions
+main: com.main.RPGExtentions.RPGExtentions
+version: 1.22
+api-version: 1.17
+commands:
+  invopen:
+    aliases:
+      - "iop"
+    usage: "iop"
+    description: "open special inv"
+  imporc:
+    usage: "imporc"
+    description: "open the improving inventory"
+permissions:
+  imporc.reload:
+    description: "重载该插件"
+    default: op
+  imporc.get:
+    description: "获取强化石和幸运符"
+    default: op
+  imporc.give:
+    description: "获取强化石和幸运符"
+    default: op
+  imporc.im:
+    description: "打开强化界面"
+    default: op

@@ -1,0 +1,76 @@
+# 开发者测试模式
+op-mode: true
+# 测试人员（这个是测试点击的格子，编程用的，不编程不必加上自己的id)
+test-name:
+  - Hecre_Reed
+# 三种强化石(有点急，强化石和保护符先限定数量吧，不完全自定义属于是)
+highstonename:
+  name: §c§l高级强化石
+  id: quartz
+  lore:
+    - §a最高级的强化石
+middlestonename:
+  name: §b§l中级强化石
+  id: amethyst_shard
+  lore:
+    - §a中级强化石
+lowstonename:
+  name: §a§l低级强化石
+  id: coal
+  lore:
+    - §a最低级的强化石
+# 两种保护符
+lowkeep:
+  name: §a§l一级幸运草
+  id: dandelion
+  chance: 10
+  lore:
+    - '§a再也普通不过的mopemope'
+    - '§a提升: 10%'
+highkeep:
+  name: §b§l二级幸运草
+  id: blue_orchid
+  chance: 25
+  lore:
+    - '§b稍微好点的mopemope'
+    - '§b提升: 25%'
+# 需要强化的属性
+needimprove:
+  - 物理伤害
+  - 物理防御
+  - 暴击伤害
+# 可以强化的物品（物品英文名称，F3+H可以查看，我不知道打错会有什么后果哦)
+canimprove:
+  - stone_sword
+  - wooden_sword
+  - diamond_sword
+  - golden_sword
+  - iron_sword
+  - netherite_sword
+  - chainmail_helmet
+  - turtle_helmet
+  - leather_helmet
+  - iron_helmet
+  - golden_helmet
+  - diamond_helmet
+  - netherite_helmet
+  - chainmail_chestplate
+  - leather_chestplate
+  - iron_chestplate
+  - golden_chestplate
+  - diamond_chestplate
+  - netherite_chestplate
+  - chainmail_leggings
+  - leather_leggings
+  - iron_leggings
+  - golden_leggings
+  - diamond_leggings
+  - netherite_leggings
+  - chainmail_boots
+  - leather_boots
+  - iron_boots
+  - golden_boots
+  - diamond_boots
+  - netherite_boots
+# 每次强化增加的点数
+point: 1
