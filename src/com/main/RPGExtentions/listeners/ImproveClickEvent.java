@@ -247,15 +247,17 @@ public class ImproveClickEvent implements Listener {
                         if (Objects.requireNonNull(inv.getItem(id)).equals(instance.up)) {
                             if (cur != null) {
                                 int amount = cur.getAmount();
+                                cur.setAmount(1);
                                 if (!((cur.equals(instance.highup)) || (cur.equals(instance.midup)) || (cur.equals(instance.lowup)))) {
                                     p.sendMessage("§e§l请放入正确的强化石");
+                                    cur.setAmount(amount);
                                     e.setCancelled(true);
                                 } else {
                                     if (Objects.requireNonNull(inv.getItem(11)).equals(instance.weapon)) {
                                         p.sendMessage("§e§l请先放入武器");
+                                        cur.setAmount(amount);
                                         e.setCancelled(true);
                                     } else {
-                                        cur.setAmount(1);
                                         e.setCancelled(true);
                                         inv.setItem(15, cur);
                                         if (amount > 1) {
@@ -286,12 +288,13 @@ public class ImproveClickEvent implements Listener {
                         if (Objects.requireNonNull(inv.getItem(id)).equals(instance.help)) {
                             if (cur != null) {
                                 int amount = cur.getAmount();
+                                cur.setAmount(1);
                                 if (!(cur.equals(instance.highkeep) || cur.equals(instance.lowkeep))) {
                                     p.sendMessage("§e§l请放入正确的保护符");
+                                    cur.setAmount(amount);
                                     e.setCancelled(true);
                                 } else {
                                     e.setCancelled(true);
-                                    cur.setAmount(1);
                                     inv.setItem(id, cur);
                                     if (amount > 1) {
                                         cur.setAmount(amount - 1);
